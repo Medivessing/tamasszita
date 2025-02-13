@@ -28,7 +28,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col pt-8">
         <p className="text-3xl text-[#3D3E41] ">Mivel foglalkozom?</p>
         <div className="flex flex-row gap-3 pt-4 items-center">
           <div className="">
@@ -41,7 +41,7 @@ const About = () => {
             dolgozom, mint React, TypeScript, Next.js és Tailwind CSS.
           </p>
         </div>
-        <div className="flex flex-row gap-3 pt-4 items-center">
+        <div className="flex flex-row gap-3 py-4 items-center ">
           <div className="">
             <BsCameraVideo color="6C7D47" size={45} />
           </div>
@@ -53,6 +53,7 @@ const About = () => {
             és asztalos termékek terveinek megrajzolására használom.
           </p>
         </div>
+        <div className="h-[2px] w-full bg-gradient-to-r  from-[#556B2F] to-[#ABDB58]" />
       </div>
     </>
   );

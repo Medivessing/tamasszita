@@ -26,8 +26,8 @@ const CV = () => {
             <p>Balatonfüred, Magyarország</p>
           </div>
           <p className="pt-3 text-[#A1A1A1] text-justify">
-            Szabadidőmben egyetem mellett egyéni vállalkozóként egyedi késeket
-            és asztalos termékeket tervezek, készítek és értékesítek online.
+            Az egyetem befejezése után szabadúszóként vállalok
+            weboldal-tervezést és fejlesztést.
           </p>
           <Link href=" https://tamasszita.com" passHref legacyBehavior>
             <a
@@ -49,8 +49,9 @@ const CV = () => {
             <p>Balatonfüred, Magyarország</p>
           </div>
           <p className="pt-3 text-[#A1A1A1] text-justify">
-            Szabadidőmben egyetem mellett egyéni vállalkozóként egyedi késeket
-            és asztalos termékeket tervezek, készítek és értékesítek online.
+            Az egyetem alatt kezdtem el egyéni vállalkozóként egyedi késeket és
+            asztalos termékeket tervezni, készíteni és online értékesíteni, és
+            ezt a tevékenységet azóta is folytatom.
           </p>
           <Link href=" https://szitacustoms.com" passHref legacyBehavior>
             <a
@@ -100,8 +101,8 @@ const CV = () => {
             <p>Aalborg, Dánia</p>
           </div>
           <p className="pt-3 text-[#A1A1A1] text-justify">
-            Eltöltött egy hónapom alatt betekintést nyerhettem egy külföldi IT
-            cég működésébe és megismerkedtem közelebbről egy nagyszabású
+            A gyakorlaton töltött időm alatt betekintést nyerhettem egy külföldi
+            IT cég működésébe és megismerkedtem közelebbről egy nagyszabású
             JavaScript alapú projekttel. Főbb feladataim bugok javítása és új
             funkciók implementálása volt a cég számára.
           </p>
@@ -202,7 +203,7 @@ const CV = () => {
                   Keretrendszerek és könyvtárak
                 </h1>
                 <p className="pt-1 text-[#A1A1A1] text-justify">
-                  React, Next.JS, Node.JS
+                  React, Next.js, Node.js
                 </p>
               </div>
               <div className="flex flex-col text-[#3D3E41]">
@@ -214,7 +215,6 @@ const CV = () => {
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );

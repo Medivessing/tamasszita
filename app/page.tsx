@@ -6,7 +6,7 @@ import { IoCube, IoLocation, IoMail, IoNewspaper } from "react-icons/io5";
 import { TbWorldWww } from "react-icons/tb";
 import portrait from "@/public/me.jpeg";
 import { RiMessage2Fill } from "react-icons/ri";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import About from "@/components/About";
 import CV from "@/components/CV";
 import Works from "@/components/Works";
@@ -14,6 +14,15 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   const [activeButton, setActiveButton] = useState("Home");
+
+  const handleDownload = useCallback(() => {
+    const link = document.createElement("a");
+    link.href = "/CV.pdf";
+    link.download = "Szita_Tamas_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }, []);
 
   return (
     <div className="bg-complex-radial min-h-screen flex flex-col md:flex-row items-center p-8 justify-center gap-24 scrollbar-hide">
@@ -90,7 +99,10 @@ export default function Home() {
         </div>
 
         <div className="pt-10">
-          <button className="bg-gradient-to-r from-[#6C7D47] to-[#A3B678] py-1 px-6 rounded-2xl text-lg text-[#f5f5f5] hover:text-[#3D3E41]">
+          <button
+            onClick={handleDownload}
+            className="bg-gradient-to-r from-[#6C7D47] to-[#A3B678] py-1 px-6 rounded-2xl text-lg text-[#f5f5f5] hover:text-[#3D3E41]"
+          >
             Önéletrajz letöltése
           </button>
         </div>
@@ -104,7 +116,7 @@ export default function Home() {
               activeButton === "Home"
                 ? "bg-gradient-to-l from-[#6C7D47] to-[#A3B678]"
                 : ""
-            } bg-[#EAEAEA] flex flex-col rounded-2xl p-3 items-center w-[70px] h-[70px] hover:bg-[#B5C18E]  `}
+            } bg-[#EAEAEA] flex flex-col rounded-2xl p-3 items-center w-[75px] h-[75px] hover:bg-[#B5C18E]  `}
           >
             <div className="">
               <FaHome
@@ -126,7 +138,7 @@ export default function Home() {
               activeButton === "CV"
                 ? "bg-gradient-to-l from-[#6C7D47] to-[#A3B678]"
                 : ""
-            } bg-[#EAEAEA] flex flex-col rounded-2xl p-3 items-center w-[70px] h-[70px] hover:bg-[#B5C18E]  `}
+            } bg-[#EAEAEA] flex flex-col rounded-2xl p-3 items-center w-[75px] h-[75px] hover:bg-[#B5C18E]  `}
           >
             <div>
               <IoNewspaper
@@ -148,7 +160,7 @@ export default function Home() {
               activeButton === "Works"
                 ? "bg-gradient-to-l from-[#6C7D47] to-[#A3B678]"
                 : ""
-            } bg-[#EAEAEA] flex flex-col rounded-2xl p-3 items-center w-[70px] h-[70px] hover:bg-[#B5C18E]  `}
+            } bg-[#EAEAEA] flex flex-col rounded-2xl p-3 items-center w-[75px] h-[75px] hover:bg-[#B5C18E]  `}
           >
             <div className="">
               <IoCube
@@ -170,7 +182,7 @@ export default function Home() {
               activeButton === "Contact"
                 ? "bg-gradient-to-l from-[#6C7D47] to-[#A3B678]"
                 : ""
-            } bg-[#EAEAEA] flex flex-col rounded-2xl p-3 items-center w-[70px] h-[70px] hover:bg-[#B5C18E]  `}
+            } bg-[#EAEAEA] flex flex-col rounded-2xl p-3 items-center w-[75px] h-[75px] hover:bg-[#B5C18E]  `}
           >
             <div className="">
               <RiMessage2Fill
@@ -183,12 +195,12 @@ export default function Home() {
                 activeButton === "Contact" ? "text-[#f5f5f5]" : "text-[#3D3E41]"
               }`}
             >
-              Kontakt
+              Kapcsolat
             </p>
           </button>
         </div>
 
-        <div className="bg-[#F5F5F5] rounded-2xl min-w-[500px] max-w-[700px] p-8 flex flex-col scrollbar-hide">
+        <div className="bg-[#F5F5F5] rounded-2xl max-w-[700px] h-[650px] p-8 flex flex-col scrollbar-hide overflow-y-auto ">
           {activeButton === "Home" && <About />}
           {activeButton === "CV" && <CV />}
           {activeButton === "Works" && <Works />}
