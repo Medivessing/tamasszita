@@ -17,7 +17,7 @@ export default function Home() {
 
   const handleDownload = useCallback(() => {
     const link = document.createElement("a");
-    link.href = "/CV.pdf";
+    link.href = "/Szita_Tamas_CV.pdf";
     link.download = "Szita_Tamas_CV.pdf";
     document.body.appendChild(link);
     link.click();
