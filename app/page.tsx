@@ -25,8 +25,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-complex-radial min-h-screen flex flex-col md:flex-row items-center p-8 justify-center gap-24 scrollbar-hide">
-      <div className="bg-[#F5F5F5] rounded-2xl max-w-[400px] p-10 flex flex-col items-center mb-auto mt-40 ">
+    <div className="bg-complex-radial min-h-screen flex flex-col md:flex-row items-center lg:p-8 justify-center gap-24 scrollbar-hide">
+      <div className="bg-[#F5F5F5] rounded-2xl max-w-[400px] p-4 lg:p-10 flex flex-col items-center mb-auto mt-40 ">
         <div className="relative -mt-[7.5rem] ">
           <Image
             src={portrait}
