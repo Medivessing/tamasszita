@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-complex-radial min-h-screen flex flex-col md:flex-row items-center lg:p-8 justify-center gap-24 scrollbar-hide">
+    <div className="bg-complex-radial min-h-screen flex flex-col lg:flex-row items-center lg:p-8 justify-center gap-6 lg:gap-24 scrollbar-hide">
       <div className="bg-[#F5F5F5] rounded-2xl max-w-[400px] p-4 lg:p-10 flex flex-col items-center lg:mb-auto mt-40 ">
         <div className="relative -mt-[7.5rem] ">
           <Image
@@ -109,7 +109,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col lg:mt-24">
-        <div className="bg-[#F5F5F5] rounded-2xl mx-auto md:mx-0 md:ml-auto p-5 items-center flex flex-row justify-between gap-5 mb-5">
+        <div className="bg-[#F5F5F5] rounded-2xl mx-auto lg:mx-0 lg:ml-auto p-5 items-center flex flex-row justify-between gap-5 mb-5">
           <button
             onClick={() => setActiveButton("Home")}
             className={`${
@@ -200,7 +200,7 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="bg-[#F5F5F5] rounded-2xl max-w-[350px] md:max-w-[700px] h-[650px] p-5 lg:p-10 flex flex-col scrollbar-hide overflow-y-auto ">
+        <div className="bg-[#F5F5F5] rounded-2xl mx-auto max-w-[350px] md:max-w-[500px] lg:max-w-[700px] h-[650px] p-5 lg:p-10 flex flex-col scrollbar-hide overflow-y-auto ">
           {activeButton === "Home" && <About />}
           {activeButton === "CV" && <CV />}
           {activeButton === "Works" && <Works />}

@@ -13,7 +13,7 @@ const Works = () => {
         <div className="h-[2px] w-full bg-gradient-to-r  from-[#556B2F] to-[#ABDB58]" />
       </div>
 
-      <div className="flex flex-col py-4 ">
+      <div className="flex flex-col ">
         <p className="text-3xl text-[#3D3E41] ">Szita Customs</p>
         <div className="flex flex-col">
           <div className="flex flex-row gap-5 pt-3 items-center">
@@ -45,9 +45,11 @@ const Works = () => {
         </div>
       </div>
 
-      <div className="h-[2px] w-full bg-gradient-to-r  from-[#556B2F] to-[#ABDB58]" />
+      <div className="py-3">
+        <div className="h-[2px] w-full bg-gradient-to-r  from-[#556B2F] to-[#ABDB58]" />
+      </div>
 
-      <div className="flex flex-col pt-4">
+      <div className="flex flex-col">
         <p className="text-3xl text-[#3D3E41] ">Master register</p>
         <div className="flex flex-col">
           <div className="flex flex-row gap-5 pt-3 items-center">
@@ -61,10 +63,11 @@ const Works = () => {
             <p className="text-[#A1A1A1] text-justify">
               A szakdolgozatom erről a munkaszervező alkalmazás fejlesztéséről
               szól, amelyet egy takarítócég számára terveztem. Jogosultságok és
-              felhasználók kezeléséért felel. Az alkalmazás lehetővé
-              teszi a beosztások könnyű elkészítését, üzenetek és automatikus értesítések
-              küldését, valamint támogatja a leltározást. Mindemellett az
-              adatbázisban tárolt adatok alapján statisztikat mutat ki a vezetők számára.
+              felhasználók kezeléséért felel. Az alkalmazás lehetővé teszi a
+              beosztások könnyű elkészítését, üzenetek és automatikus
+              értesítések küldését, valamint támogatja a leltározást.
+              Mindemellett az adatbázisban tárolt adatok alapján statisztikat
+              mutat ki a vezetők számára.
             </p>
           </div>
           <p className="text-[#A1A1A1] text-justify">
