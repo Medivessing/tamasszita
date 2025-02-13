@@ -7,13 +7,17 @@ import { TbWorldWww } from "react-icons/tb";
 import portrait from "@/public/me.jpeg";
 import { RiMessage2Fill } from "react-icons/ri";
 import { useState } from "react";
+import About from "@/components/About";
+import CV from "@/components/CV";
+import Works from "@/components/Works";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [activeButton, setActiveButton] = useState("Home");
 
   return (
-    <div className="bg-complex-radial min-h-screen flex flex-row items-center p-8 justify-center gap-24">
-      <div className="bg-[#F5F5F5] rounded-2xl w-[400px]  p-10 flex flex-col items-center ">
+    <div className="bg-complex-radial min-h-screen flex flex-col md:flex-row items-center p-8 justify-center gap-24 scrollbar-hide">
+      <div className="bg-[#F5F5F5] rounded-2xl max-w-[400px] p-10 flex flex-col items-center mb-auto mt-40 ">
         <div className="relative -mt-[7.5rem] ">
           <Image
             src={portrait}
@@ -32,7 +36,7 @@ export default function Home() {
           <Link href="https://github.com/Medivessing" passHref legacyBehavior>
             <a
               target="_blank"
-              className="bg-[#EAEAEA]  p-1 rounded hover:bg-[#B5C18E] "
+              className="bg-[#EAEAEA] p-1 rounded hover:bg-[#B5C18E] "
             >
               <FaGithub size={23} color="#3D3E41" />
             </a>
@@ -92,8 +96,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6">
-        <div className="bg-[#F5F5F5] rounded-2xl w-[420px] h-[120px] ml-auto p-6 flex flex-row justify-between">
+      <div className="flex flex-col mt-24">
+        <div className="bg-[#F5F5F5] rounded-2xl ml-auto p-5 items-center flex flex-row justify-between gap-5 mb-5">
           <button
             onClick={() => setActiveButton("Home")}
             className={`${
@@ -157,7 +161,7 @@ export default function Home() {
                 activeButton === "Works" ? "text-[#f5f5f5]" : "text-[#3D3E41]"
               }`}
             >
-              Works
+              Munkáim
             </p>
           </button>
           <button
@@ -179,12 +183,16 @@ export default function Home() {
                 activeButton === "Contact" ? "text-[#f5f5f5]" : "text-[#3D3E41]"
               }`}
             >
-              Contact
+              Kontakt
             </p>
           </button>
         </div>
-        <div className="bg-[#F5F5F5] rounded-2xl w-[700px] h-[600px] p-6">
-          text
+
+        <div className="bg-[#F5F5F5] rounded-2xl min-w-[500px] max-w-[700px] p-8 flex flex-col scrollbar-hide">
+          {activeButton === "Home" && <About />}
+          {activeButton === "CV" && <CV />}
+          {activeButton === "Works" && <Works />}
+          {activeButton === "Contact" && <Contact />}
         </div>
       </div>
     </div>

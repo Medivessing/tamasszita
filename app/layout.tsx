@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Szita Tamás - Webfejlesztő",
+  title: "Szita Tamás - Portfolió",
   description: "Szita Tamás személyes portfóliója és önéletrajza",
   icons: [
     { rel: "icon", url: "/favicon.ico" },
