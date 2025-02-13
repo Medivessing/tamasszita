@@ -21,7 +21,7 @@ const CV = () => {
             <h1 className="font-semibold text-lg">Freelance webfejlesztő</h1>
             <p className="font-semibold">2025 január –</p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between pt-1 ">
+          <div className="flex flex-col md:flex-row justify-between pt-1 text-black">
             <p className="text-base">Weboldalak tervezése és készítése</p>
             <p>Balatonfüred, Magyarország</p>
           </div>
@@ -44,7 +44,7 @@ const CV = () => {
             <h1 className="font-semibold text-lg">Egyéni vállalkozó</h1>
             <p className="font-semibold">2023 november –</p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between pt-1 ">
+          <div className="flex flex-col md:flex-row justify-between pt-1 text-black">
             <p className="text-base">Kés és asztalos termékek készítése</p>
             <p>Balatonfüred, Magyarország</p>
           </div>
@@ -71,7 +71,7 @@ const CV = () => {
             </h1>
             <p className="font-semibold">2022 március – 2023 szeptember</p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between pt-1 ">
+          <div className="flex flex-col md:flex-row justify-between pt-1 text-black">
             <p className="text-base">Takarító</p>
             <p>Aalborg, Dánia</p>
           </div>
@@ -96,7 +96,7 @@ const CV = () => {
             <h1 className="font-semibold text-lg">DigiShares A/S</h1>
             <p className="font-semibold">2023 január - 2023 február</p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between pt-1 ">
+          <div className="flex flex-col md:flex-row justify-between pt-1 text-black">
             <p className="text-base">Full Stack fejlesztő gyakornok</p>
             <p>Aalborg, Dánia</p>
           </div>
@@ -124,7 +124,7 @@ const CV = () => {
             </h1>
             <p className="font-semibold">2017 június – 2022 március</p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between pt-1 ">
+          <div className="flex flex-col md:flex-row justify-between pt-1 text-black">
             <p className="text-base">Építőipari munkatárs</p>
             <p>Csopak, Magyarország</p>
           </div>
@@ -150,7 +150,7 @@ const CV = () => {
               </h1>
               <p className="font-semibold">2019 szeptember - 2025 január</p>
             </div>
-            <div className="flex flex-col md:flex-row justify-between pt-1 ">
+            <div className="flex flex-col md:flex-row justify-between pt-1 text-black">
               <p className="text-base">Mérnökinformatikus Bsc</p>
               <p>Győr, Magyarország</p>
             </div>
@@ -166,7 +166,7 @@ const CV = () => {
               </h1>
               <p className="font-semibold">2020 szeptember - 2022 február</p>
             </div>
-            <div className="flex flex-col md:flex-row justify-between pt-1 ">
+            <div className="flex flex-col md:flex-row justify-between pt-1 text-black">
               <p className="text-base">Asztalos OKJ Szakvizsga</p>
               <p>Győr, Magyarország</p>
             </div>
