@@ -182,7 +182,7 @@ const CV = () => {
             Készségek
           </p>
           <div className="h-[2px] w-full bg-gradient-to-r  from-[#556B2F] to-[#ABDB58] " />
-          <div className="flex flex-row justify-between pt-3">
+          <div className="flex flex-row justify-between py-3">
             <div className="flex flex-col text-left gap-2">
               <div className="flex flex-col text-[#3D3E41]">
                 <h1 className="font-semibold text-lg">Programozási nyelvek</h1>
@@ -214,6 +214,7 @@ const CV = () => {
               </div>
             </div>
           </div>
+          <div className="h-[2px] w-full bg-gradient-to-r  from-[#556B2F] to-[#ABDB58] " />
         </div>
       </div>
     </div>
