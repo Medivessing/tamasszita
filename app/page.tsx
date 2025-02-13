@@ -207,6 +207,7 @@ export default function Home() {
           {activeButton === "Contact" && <Contact />}
         </div>
       </div>
+      <div className="py-5"></div>
     </div>
   );
 }

@@ -28,7 +28,7 @@ const Works = () => {
               A saját vállalkozásom számára készített weboldal elsősorban a
               termékek bemutatását és rendelését szolgálja. A projekt folyamatos
               fejlesztés alatt áll, a végső cél pedig egy teljes értékű webshop
-              létrehozása online tranzakciókkal és autamatikus rendeléssel
+              létrehozása online tranzakciókkal és automatikus rendeléssel
               feldolgozással. A fejlesztéshez TypeScriptet, Reactet és Next.js-t
               használom.
             </p>
