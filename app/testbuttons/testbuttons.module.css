@@ -1,8 +1,8 @@
-:root {
+/* :root {
     --bg-color: rgb(20, 20, 20);
     --card-color: rgb(23, 23, 23);
   }
-  
+   */
   .body {
     align-items: center;
     background-color: var(--bg-color);
