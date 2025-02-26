@@ -9,7 +9,7 @@ import { motion, PanInfo, useAnimation } from "framer-motion";
 import AboutV2 from "../pages/AboutV2";
 
 const Version_3 = () => {
-  const [activeInfo, setActiveInfo] = useState("munkáim");
+  const [activeInfo, setActiveInfo] = useState("rólam");
   const infos = ["rólam", "cv", "munkáim"];
 
   const controls = useAnimation();
