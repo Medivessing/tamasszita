@@ -6,10 +6,10 @@ import { FaGithub, FaHome, FaLinkedin } from "react-icons/fa";
 import { IoCube, IoLocation, IoMail, IoNewspaper } from "react-icons/io5";
 import { RiMessage2Fill } from "react-icons/ri";
 import { TbWorldWww } from "react-icons/tb";
-import About from "../pages/About";
-import CV from "../pages/CV";
-import Works from "../pages/Works";
-import Contact from "../pages/Contact";
+// import About from "../pages/About";
+// import CV from "../pages/CV";
+// import Works from "../pages/Works";
+// import Contact from "../pages/Contact";
 import portrait from "@/public/me.jpeg";
 
 const Version_2 = () => {
