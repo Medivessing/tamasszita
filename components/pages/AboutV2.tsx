@@ -27,8 +27,8 @@ const AboutV2 = () => {
           className="rounded-2xl pointer-events-none select-none"
         />
       </div>
-      <h1 className=" font-extrabold text-2xl pt-4 mt-[170px]">Szita Tamás</h1>
-      <p className=" pt-1">Webfejlesztő</p>
+      <h1 className=" font-extrabold text-2xl pt-4 mt-[170px] text-[#ededed]">Szita Tamás</h1>
+      <p className=" pt-1 text-[#ededed]">Webfejlesztő</p>
 
       <div className="icons flex flex-row gap-2 pb-10 pt-3">
         <Link href="https://github.com/Medivessing" passHref legacyBehavior>
@@ -81,7 +81,7 @@ const AboutV2 = () => {
       <div className="pt-10">
         <button
           onClick={handleDownload}
-          className="shadow-xl py-1 px-6 rounded-2xl text-lg text-[#ffffffbf] "
+          className="shadow-xl py-1 px-6 rounded-2xl text-lg text-[#ffffffbf] hover:text-white"
         >
           Önéletrajz letöltése
         </button>

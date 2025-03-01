@@ -78,9 +78,9 @@ const Version_3 = () => {
         <div className="info-container">
           <div className="buttons flex flex-col items-center ">
             <button className="sm:px-0 md:px-10 hover:scale-125 transition-transform active:scale-95" onClick={handlePrev}>
-              <FaArrowLeft size={30} />
+              <FaArrowLeft size={30} fill="white"/>
             </button>
-            <p className="text-lg pt-5">{infos[prevIndex].toUpperCase()}</p>
+            <p className="text-lg pt-5 text-white">{infos[prevIndex].toUpperCase()}</p>
           </div>
 
           {activeInfo === "rólam" && (
@@ -122,9 +122,9 @@ const Version_3 = () => {
 
           <div className="buttons flex flex-col items-center">
             <button className="sm:px-0 md:px-10 hover:scale-125 transition-transform active:scale-95" onClick={handleNext}>
-              <FaArrowRight size={30} />
+              <FaArrowRight size={30} fill="white"/>
             </button>
-            <p className="text-lg pt-5">{infos[nextIndex].toUpperCase()}</p>
+            <p className="text-lg pt-5 text-white">{infos[nextIndex].toUpperCase()}</p>
           </div>
           {/* <div className="pages bg-black">asd</div> */}
         </div>

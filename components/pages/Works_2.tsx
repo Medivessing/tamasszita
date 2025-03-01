@@ -14,9 +14,9 @@ const Works = () => {
       </div>
 
       <div className="flex flex-col pt-3 ">
-        <p className="text-3xl ">Szita Customs</p>
+        <p className="text-3xl text-[#ededed]">Szita Customs</p>
         <div className="flex flex-col">
-          <div className="flex flex-row gap-5 pt-3 items-center">
+          <div className="flex flex-col gap-5 pt-3 items-center">
             <Image
               src={logo}
               width={80}
@@ -52,7 +52,7 @@ const Works = () => {
       <div className="flex flex-col">
         <p className="text-3xl text-white ">Master register</p>
         <div className="flex flex-col">
-          <div className="flex flex-row gap-5 pt-3 items-center">
+          <div className="flex flex-col  gap-5 pt-3 items-center">
             <Image
               src={masterregisterlogo}
               width={80}
